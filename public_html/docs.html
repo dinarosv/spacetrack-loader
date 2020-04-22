@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="icon" href="icon.svg">
+  <link rel="stylesheet" type="text/css" href="docs.css">
+  <title>Documentation</title>
+</head>
+
+<body>
+  <header class="header">
+    <img width="100" height="100" src="icon.svg" />
+    <h1>Documentation for satellites API</h1>
+  </header>
+  <div class="content">
+    <h2>/sat</h2>
+    <p>Fetch all satellites
+      <h4>Parameters:</h3>
+        <ul>
+          <li>ID: fetch item with given ID (NORAD_CAT_ID)</li>
+          <li>FILE: fetch data newer than given FILE no. Also returns decayed items.</li>
+        </ul>
+        <p>When not specifying any parameters, all satellites (not decayed) are returned</p>
+        <h4>Preview</h3>
+          <div class="codesn">
+            <pre><code>
+GET: http://folk.ntnu.no/dinaro/sat?ID=28282
+    </pre></code>
+          </div>
+          <div class="codesn-d">
+            <pre> <code>
+{"28282":
+  {
+    "TLE_LINE2":
+      "2 28282 075.7110 232.5825 0027065 133.3542 081.8413 15.52976059624931",
+    "TLE_LINE1":
+      "1 28282U 93014K   15022.24715624  .00913869  00000-0  13149-1 0  9995",
+    "TLE_LINE0":"0 SL-18 DEB",
+    "DECAYED":"1",
+    "OBJECT_NAME":"SL-18 DEB",
+    "OBJECT_TYPE":"DEBRIS",
+    "OBJECT_ID":"1993-014K",
+    "FILE":"1817308",
+    "NORAD_CAT_ID":"28282"
+  }
+}
+        </pre></code>
+          </div>
+          <p>Check newest file number: <a
+              href="http://folk.ntnu.no/dinaro/sat/fileno">http://folk.ntnu.no/dinaro/sat/fileno</a></p>
+          <br />
+          <hr>
+          </hr>
+          <h2>How to</h2>
+          <p>Example: <a
+              href="http://folk.ntnu.no/dinaro/sat?FILE=2716026">http://folk.ntnu.no/dinaro/sat?FILE=2716026</a></p>
+          <ul>
+            <li>? indicates start of parameters</li>
+            <li>Use & between multiple parameters</li>
+          </ul>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+body {
+  margin: 0px;
+}
+.content {
+  margin: 2em;
+  font-family:georgia,garamond,serif;
+}
+.codesn {
+  background-color: #C1C1C1;
+  padding-left: 1em;
+}
+.codesn-d {
+  background-color: #2C4251;
+  padding-left: 1em;
+  color: #B6C649;
+  overflow-y: scroll;
+  border-radius: 1rem;
+}
+.header {
+  overflow: hidden;
+  background-color: #D16666;
+  padding: 1em 1em 1em 2em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  font-family:georgia,garamond,serif;
+}
+h1 {
+  display: inline;
+}
+img {
+  float: left;
+}
