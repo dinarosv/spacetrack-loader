@@ -18,3 +18,8 @@ Run update file:
 ```
 41 14 * * 2 python updatedata.py
 ```
+
+## Fetching data from the server set up
+Visit: [Dinaro's docs at folk.ntnu.no (http://folk.ntnu.no/dinaro/docs.html)](http://folk.ntnu.no/dinaro/docs.html)
+
+public_html/sat/index.php answers requests at http://folk.ntnu.no/dinaro/sat
