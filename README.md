@@ -23,3 +23,6 @@ Run update file:
 Visit: [Dinaro's docs at folk.ntnu.no (http://folk.ntnu.no/dinaro/docs.html)](http://folk.ntnu.no/dinaro/docs.html)
 
 public_html/sat/index.php answers requests at http://folk.ntnu.no/dinaro/sat
+
+## Linked projects
+Stufftracker app: https://github.com/einarmo/stufftracker
